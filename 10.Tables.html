@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <style>
+    tr:hover {
+      background-color: hotpink;
+    }
+    caption {
+      font-size: large;
+      font-weight: bold;
+    }
+    #total_column {
+      text-align: right;
+    }
+    #calender {
+      text-align: center;
+    }
+    #calender tr:nth-child(even) {
+      background-color: #d6eeee;
+    }
+    #calender td:nth-child(even),
+    #calender th:nth-child(even) {
+      background-color: #d6eeee;
+    }
+    #calender th {
+      text-align: center;
+      color: black;
+    }
+    #calender td {
+      height: 100px;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+      border-collapse: collapse;
+
+      /* border-radius: 50%; */
+      /* dotted
+        dashed
+        solid
+        double
+        groove
+        ridge 
+        inset
+        outset
+        none
+        hidden */
+      border: solid rgb(0, 0, 0) 1px;
+      padding: 10px;
+    }
+    tr {
+      background-color: rgb(145, 200, 251);
+    }
+    th {
+      color: white;
+      background-color: dodgerblue;
+      text-align: left;
+    }
+  </style>
+  <body>
+    <table width="100%">
+      <thead>
+        <tr>
+          <th>S.NO</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Contact No</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Sher Mohammad Gorar</td>
+          <td>shermohammadgorar1@gmail.com</td>
+          <td>03153253639</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Sheraz Gorar</td>
+          <td>sheraz@gmail.com</td>
+          <td>03000000000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Dr.Mohammad Ayoob Gorar</td>
+          <td>drmayoob@gmail.com</td>
+          <td>03300000000</td>
+        </tr>
+        <tr>
+          <!-- Rows Span -->
+          <td rowspan="2">4</td>
+          <td rowspan="2">Dost Mohammad Gorar</td>
+          <td rowspan="2">dostm@gmail.com</td>
+          <td>03100000000</td>
+        </tr>
+        <tr>
+          <td rowspan="2">03100000000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>S.NO</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Contact No</th>
+        </tr>
+      </tfoot>
+      <caption>
+        Table of Contacts
+      </caption>
+    </table>
+    <br />
+    <br />
+
+    <!-- Order table -->
+    <!-- Make width of table 100% -->
+    <table width="100%">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>OrderID</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>USA</td>
+          <td>1001</td>
+          <!-- Aligh Right Amount  -->
+          <td align="right">$100</td>
+        </tr>
+        <tr>
+          <td>UK</td>
+          <td>1002</td>
+          <td align="right">$200</td>
+        </tr>
+        <tr>
+          <td>China</td>
+          <td>1003</td>
+          <td align="right">$1200</td>
+        </tr>
+        <tr>
+          <td>UAE</td>
+          <td>1004</td>
+          <td align="right">$2000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr style="height: 70px">
+          <th colspan="2">Total</th>
+
+          <th id="total_column">$3500</th>
+        </tr>
+      </tfoot>
+      <caption>
+        Table of Orders
+      </caption>
+    </table>
+    <br />
+    <br />
+    <!-- Calender -->
+    <table width="100%" id="calender">
+      <caption>
+        Calender
+      </caption>
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th style="background-color: dodgerblue">Mon</th>
+          <th>Tue</th>
+          <th style="background-color: dodgerblue">Wed</th>
+          <th>Thu</th>
+          <th style="background-color: dodgerblue">Fri</th>
+          <th>Sat</th>
+          <th style="background-color: dodgerblue">Sun</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- Adding Header Vertical -->
+          <th>Week One</th>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <th>Week Two</th>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <th>Week Three</th>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <th>Week Four</th>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+        </tr>
+        <tr>
+          <th>Week Five</th>
+          <td>30</td>
+          <td>31</td>
+          <!-- Column span used to merge columns -->
+          <td colspan="5"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
