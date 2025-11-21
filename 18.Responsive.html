@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Include the below line to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+  </head>
+  <body>
+    <!-- If the CSS width property is set to 100%, the image will be responsive and scale up and down -->
+    <img src="bg.jpg" alt="" srcset="" style="width: 100%" />
+    <img src="bg.jpg" alt="" srcset="" style="max-width: 100%; height: auto" />
+
+    <!-- Show Multiple Images according to brower sizes -->
+    <picture>
+      <source srcset="./bg.jpg" media="(max-width: 600px)" />
+      <source srcset="./image.png" media="(max-width: 1500px)" />
+      <img src="./bg.jpg" alt="Flowers" />
+    </picture>
+  </body>
+</html>
